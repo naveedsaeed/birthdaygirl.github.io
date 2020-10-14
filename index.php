@@ -30,7 +30,7 @@ initDate();
 
 $( document ).ready(function() {
   document.getElementById('value').innerHTML = '2020-10-21';
-  var splitValues = document.getElementById("value").value.split('-');
+  var splitValues = '2020-10-21';
   var end = new Date(splitValues[0], splitValues[1] - 1, splitValues[2]);
   clearInterval(timer);
   showRemaining(end);
