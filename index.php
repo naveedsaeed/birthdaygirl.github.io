@@ -1,22 +1,16 @@
+<head>
+<title>Birthday Girl</title>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+
+
+
 <input id="myDate" type="date">
 <button id="startButton">Start Countdown</button>
 <div id="value"></div>
 <div id='countdown'></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -34,8 +28,8 @@ var timer;
 
 initDate();
 
-document.getElementById('startButton').addEventListener("click", function() {
-  document.getElementById('value').innerHTML = document.getElementById("myDate").value;
+ $( document ).ready(function() {
+  document.getElementById('value').innerHTML = "2020-10-21";
   var splitValues = document.getElementById("myDate").value.split('-');
   var end = new Date(splitValues[0], splitValues[1] - 1, splitValues[2]);
   clearInterval(timer);
@@ -76,3 +70,5 @@ function initDate() {
   document.getElementById("myDate").value = defaultDate.getFullYear() + '-' + month + '-' + defaultDate.getDate();
 }
 </script>
+
+</body>
