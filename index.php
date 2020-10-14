@@ -28,8 +28,8 @@ var timer;
 
 initDate();
 
-document.getElementById('startButton').addEventListener("click", function() {
-  document.getElementById('value').innerHTML = document.getElementById("myDate").value;
+$( document ).ready(function() {
+  document.getElementById('value').innerHTML = '2020-10-21';
   var splitValues = document.getElementById("myDate").value.split('-');
   var end = new Date(splitValues[0], splitValues[1] - 1, splitValues[2]);
   clearInterval(timer);
