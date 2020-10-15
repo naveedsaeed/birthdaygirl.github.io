@@ -8,13 +8,14 @@
 <body>
 
 
-<input id="myDate" type="date">
-<button id="startButton">Start Countdown</button>
+
 
 
 <div class="container">
 <div class="row">
-
+  
+  <input id="myDate" type="date" style="display:none;">
+  <button id="startButton" style="display:none;">Start Countdown</button>
   <div id="value"></div>
   <div id='countdown'></div>
 
