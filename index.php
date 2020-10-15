@@ -13,18 +13,10 @@
 <button id="startButton">Start Countdown</button>
 -->
 
-<div class="container">
-<div class="row">
-
   <div id="value"></div>
   <div id='countdown'></div>
 
-</div>
-
-
-</div>
-
-
+ 
 
 
 
