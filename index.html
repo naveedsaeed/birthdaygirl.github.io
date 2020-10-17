@@ -25,10 +25,20 @@
 </style>
 
 
+<script type="text/javascript">
+  var totalCount = 2;
+  function ChangeIt()
+  {
+  var num = Math.ceil( Math.random() * totalCount );
+  document.body.background = 'images/background-'+num+'.jpg';
+  //document.body.style.backgroundRepeat = "repeat";// Background repeat
+  }
+  </script>
+
 
 </head>
 
-<body class="text-center" style="background-image: url(images/background-3.jpg);background-position: inherit;">
+<body class="text-center" style="background-position: inherit;">
 
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     
@@ -59,6 +69,9 @@
 </div>
 
 <script type="text/javascript">
+
+ChangeIt();
+
 var _second = 1000;
 var _minute = _second * 60;
 var _hour = _minute * 60;
