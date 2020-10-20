@@ -97,8 +97,9 @@ function showRemaining(end) {
   var distance = end - now;
   if (distance < 0) {
     clearInterval(timer);
-    document.getElementById('countdown').innerHTML = 'EXPIRED!';
-    return;
+    //document.getElementById('countdown').innerHTML = 'EXPIRED!';
+    //return;
+    window.location.replace("hbd.html");
   }
 
   var months = Math.floor(distance / _month);
