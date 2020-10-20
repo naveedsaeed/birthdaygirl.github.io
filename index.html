@@ -96,9 +96,7 @@ function showRemaining(end) {
   var now = new Date();
   var distance = end - now;
   if (distance < 0) {
-    clearInterval(timer);
-    //document.getElementById('countdown').innerHTML = 'EXPIRED!';
-    //return;
+    clearInterval(timer); 
     window.location.replace("hbd.html");
   }
 
