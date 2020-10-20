@@ -85,7 +85,7 @@ initDate();
 
 $( document ).ready(function() {
   document.getElementById('value').innerHTML = '2020-10-21';
-  var splitValues = ["2020","10","21"];
+  var splitValues = ["2021","10","21"];
   var end = new Date(splitValues[0], splitValues[1] - 1, splitValues[2]);
   clearInterval(timer);
   showRemaining(end);
@@ -106,8 +106,7 @@ function showRemaining(end) {
   var minutes = Math.floor((distance % _hour) / _minute);
   var seconds = Math.floor((distance % _minute) / _second);
 
-  //document.getElementById('countdown').innerHTML = months + 'months ';
-  document.getElementById('countdown').innerHTML = ' ';
+  document.getElementById('countdown').innerHTML = months + 'months ';
   document.getElementById('countdown').innerHTML += days + 'days ';
   document.getElementById('countdown').innerHTML += hours + 'hrs ';
   document.getElementById('countdown').innerHTML += minutes + 'mins ';
